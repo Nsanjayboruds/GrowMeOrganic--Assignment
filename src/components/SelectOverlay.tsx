@@ -3,6 +3,11 @@ import { InputNumber } from "primereact/inputnumber";
 import { OverlayPanel } from "primereact/overlaypanel";
 import { useRef, useState } from "react";
 
+interface Props {
+    selectedCount: number;
+    onSelect: (count: number) => void;
+}
+
 export  default function SelectOverlay({selectedCount, onSelect}:Props){
     const ref =useRef<OverlayPanel>(null);
     const [count,setCount]= useState<number>(0);
