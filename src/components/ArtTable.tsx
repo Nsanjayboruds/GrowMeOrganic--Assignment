@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { Artwork } from '../types/artworks'
 import { fetchArtworks } from '../api/artworks';
 import SelectOverlay from './SelectOverlay';
